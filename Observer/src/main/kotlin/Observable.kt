@@ -3,9 +3,8 @@ package org.example
 import org.example.interfaces.IObservable
 import org.example.interfaces.IObserver
 
-class Observable (
+class Observable : IObservable{
     private var observers : ArrayList<IObserver> = arrayListOf()
-) : IObservable{
 
     override fun addObserver(o: IObserver) {
         observers.add(o)
